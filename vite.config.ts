@@ -6,6 +6,7 @@ export default defineConfig({
     rollupOptions: {
       input: {
         app: 'index.html',
+        ssr: 'ssr.ts',
       }
     }
   },
