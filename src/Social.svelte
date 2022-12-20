@@ -30,19 +30,18 @@
     }
 
     .social[data-platform="linkedin"]::before {
-        content: url(../assets/linkedin.svg);
+        content: url(/icons/linkedin.svg);
     }
     .social[data-platform="github"]::before {
-        content: url(../assets/github.svg);
+        content: url(/icons/github.svg);
     }
     .social[data-platform="phone"]::before {
-        content: url(../assets/phone.svg);
+        content: url(/icons/phone.svg);
     }
     .social[data-platform="address"]::before {
-        content: url(../assets/location.svg);
+        content: url(/icons/location.svg);
     }
-    /**/
     .social[data-platform="email"]::before {
-        content: url(../assets/email.svg);
+        content: url(/icons/email.svg);
     }
 </style>
