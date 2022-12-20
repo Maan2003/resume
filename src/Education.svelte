@@ -10,11 +10,11 @@
 <div>
     <div class="title">{school}</div>
     {#if course}
-        <span class="course">{course}</span>
+        {course}
     {/if}
     <Columar>
-        <span class="duration">{duration}</span>
-        <span class="score">{score}</span>
+        <span>{duration}</span>
+        <span>{score}</span>
     </Columar>
 </div>
 

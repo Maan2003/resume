@@ -1,6 +1,6 @@
 <script lang="ts">
-    import * as marked from "marked";
     import Columar from "./Columar.svelte";
+    import Markdown from "./Markdown.svelte";
     export let title: string | undefined = undefined;
     export let duration: string | undefined = undefined;
     export let company: string | undefined = undefined;
@@ -23,10 +23,10 @@
         <div class="summary">{summary}</div>
     {/if}
     {#if link}
-        <a class="link" href={link}>{link}</a>
+        <a href={link}>{link}</a>
     {/if}
     {#if details}
-        {@html marked.parse(details)}
+        <Markdown source={details} />
     {/if}
 </div>
 

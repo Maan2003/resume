@@ -9,45 +9,60 @@
     import Work from "./Work.svelte";
 </script>
 
-<Header name={data.personal.name} />
+<div class="app">
+    <Header name={data.personal.name} />
 
-<div class="cols">
-    <div class="c1">
-        <Section name="Contact">
-            <Social data={data.personal.socials} />
-        </Section>
-        <Section name="Education">
-            {#each data.education as e}
-                <Education {...e} />
-            {/each}
-        </Section>
-        <Section name="Skills">
-            {#each data.skill_groups as sg}
-                <Skills {...sg} />
-            {/each}
-        </Section>
-        <Section name="Achievements">
-            {#each data.achievements as a}
-                <Achieve {...a} />
-            {/each}
-        </Section>
-    </div>
-    <div class="c2">
-        <Section name="Experience">
-            {#each data.work_exp as work}
-                <Work {...work} />
-            {/each}
-        </Section>
+    <div class="cols">
+        <div class="c1">
+            <Section name="Contact">
+                <Social data={data.personal.socials} />
+            </Section>
+            <Section name="Education">
+                {#each data.education as e}
+                    <Education {...e} />
+                {/each}
+            </Section>
+            <Section name="Skills">
+                {#each data.skill_groups as sg}
+                    <Skills {...sg} />
+                {/each}
+            </Section>
+            <Section name="Achievements">
+                {#each data.achievements as a}
+                    <Achieve {...a} />
+                {/each}
+            </Section>
+        </div>
+        <div class="c2">
+            <Section name="Experience">
+                {#each data.work_exp as work}
+                    <Work {...work} />
+                {/each}
+            </Section>
 
-        <Section name="Projects">
-            {#each data.projects as w}
-                <Work {...w} />
-            {/each}
-        </Section>
+            <Section name="Projects">
+                {#each data.projects as w}
+                    <Work {...w} />
+                {/each}
+            </Section>
+        </div>
     </div>
 </div>
 
 <style>
+    .app {
+        box-sizing: border-box;
+        /* letter size */
+        max-width: 8.5in;
+        font-family: Arial;
+        font-size: var(--fsz-normal);
+        color: var(--fg);
+        padding: 0.5in 0.7in;
+        line-height: 1.4;
+        margin: 0 auto;
+        background-color: #fff;
+    }
+
     .cols {
         display: flex;
         /* gap: 20pt; */
