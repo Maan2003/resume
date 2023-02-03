@@ -1,5 +1,6 @@
 import { defineConfig } from 'vite'
 import { svelte, vitePreprocess } from '@sveltejs/vite-plugin-svelte'
+import { ssr } from 'vite-plugin-ssr/plugin'
 
 export default defineConfig({
   build: {

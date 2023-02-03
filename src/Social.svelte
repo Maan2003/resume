@@ -30,18 +30,18 @@
     }
 
     a[data-platform="linkedin"]::before {
-        content: url(/icons/linkedin.svg);
+        content: url(icons/linkedin.svg);
     }
     a[data-platform="github"]::before {
-        content: url(/icons/github.svg);
+        content: url(icons/github.svg);
     }
     a[data-platform="phone"]::before {
-        content: url(/icons/phone.svg);
+        content: url(icons/phone.svg);
     }
     a[data-platform="address"]::before {
-        content: url(/icons/location.svg);
+        content: url(icons/location.svg);
     }
     a[data-platform="email"]::before {
-        content: url(/icons/email.svg);
+        content: url(icons/email.svg);
     }
 </style>

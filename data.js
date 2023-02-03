@@ -67,7 +67,7 @@ export default
         "title": "Olma",
         "link": "https://github.com/Maan2003/olma",
         "summary": "GUI Experiments",
-        "details": "- Complex lifetime and mutability interactions.\n- Layer that uses GTK as backend.\n- Technologies: Rust, GTK- Technologies: Rust, GTK, Druid\n"
+        "details": "- Complex lifetime and mutability interactions.\n- Layer that uses GTK as backend.\n- Technologies: Rust, GTK\n",
       },
       {
         "title": "Quba",

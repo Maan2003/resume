@@ -57,21 +57,44 @@
         font-family: Arial;
         font-size: var(--fsz-normal);
         color: var(--fg);
-        padding: 0.5in 0.7in;
         line-height: 1.4;
         margin: 0 auto;
         background-color: #fff;
     }
 
+    @page {
+        margin: 0.5in 0.7in;
+    }
+
+    @media not print {
+        .app {
+            padding: 20px;
+        }
+    }
+
+    @media print, (min-width: 8in) {
+        .c1 {
+            flex: 0 0 35%;
+        }
+        .c2 {
+            margin-left: 20pt;
+            flex: 0 0 calc(65% - 20pt);
+        }
+    }
+    @media screen and (max-width: 8in) {
+        .app {
+            max-width: 5in;
+        }
+        .cols {
+            flex-direction: column;
+        }
+        .c2 {
+            margin-top: 20pt;
+        }
+    }
+
     .cols {
         display: flex;
         /* gap: 20pt; */
-    }
-    .c1 {
-        flex: 0 0 35%;
-    }
-    .c2 {
-        margin-left: 20pt;
-        flex: 0 0 calc(65% - 20pt);
     }
 </style>
